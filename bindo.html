@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahasa Inggris</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    nav {
+      width: 100%;
+      background-color: #a6c9c3;
+      color: #a6c9c3;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+    }
+    nav ul li a {
+      color: #9f725f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover{
+        color:#fcfef1
+    }
+
+    nav a {
+        color:#fcfef1
+        text-decoration none;
+        margin: 0 15px;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .full-image-section {
+      margin-top: 4rem;
+      width: 100vw;
+      height: calc(100vh - 4rem);
+    }
+    .full-image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+<style>
+    /* Container for the left image */
+    .left-side-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 500;
+    }
+  
+    .left-side-wrapper img {
+      width: 1000px;
+      height: 662px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+  
+    .left-side-wrapper img:hover {
+      transform: scale(1.02);
+    }
+  
+    /* Modal (lightbox) for enlarged image */
+    .image-modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .image-modal img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 20px;
+    }
+  
+    .image-modal:target {
+      display: flex;
+    }
+  </style>
+  
+  <!-- Left-side image container -->
+  <div class="left-side-wrapper">
+    <a href="#enlargedLeftImage">
+      <img src="pop up bindo.png" alt="My Bahasa Indonesia AP">
+    </a>
+  </div>
+  
+  <!-- Modal for enlarged image -->
+  <div id="enlargedLeftImage" class="image-modal" onclick="this.style.display='none'">
+    <img src="pop up bindo.png" alt="My Bahasa Indonesia AP">
+  </div>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="agama.html">Agama</a></li>
+      <li><a href="pkn.html">PKn</a></li>
+      <li><a href="bindo.html">Bahasa Indonesia</a></li>
+      <li><a href="bahasa inggris.html">Bahasa Inggris</a></li>
+      <li><a href="ips.html">IPS</a></li>
+      <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+    </ul>
+  </nav>
+
+  <section class="full-image-section" id="inggris">
+    <img src="wallpaper bindo.png" alt="Bahasa Indonesia Image" />
+  </section>
+</body>
+</html>
